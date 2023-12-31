@@ -32,7 +32,7 @@
       </el-select>
     </div>
     <el-divider />
-    <div>默认文字颜色</div>
+    <div>默认文字颜色Vue starter</div>
     <span class="txt">自定义类名</span>
     <el-divider />
     <div>
