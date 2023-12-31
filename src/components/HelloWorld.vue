@@ -32,6 +32,9 @@
       </el-select>
     </div>
     <el-divider />
+    <div>默认文字颜色</div>
+    <span class="txt">自定义类名</span>
+    <el-divider />
     <div>
       <el-table :data="tableData">
         <el-table-column prop="date" label="Date" />
@@ -187,5 +190,8 @@ const options = [
   display: flex;
   justify-content: space-between;
   padding: 10px;
+}
+.txt {
+  color: #67c23a;
 }
 </style>
