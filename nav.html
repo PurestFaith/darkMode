@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="top" id="top"></div>
+      <div class="con1" id="con1"></div>
+      <div class="con2" id="con2"></div>
+      <div class="footer" id="footer"></div>
+    </div>
+    <div class="navs">
+      <div class="navs_top">
+        <a href="#top">top</a>
+      </div>
+      <div class="navs_nav">
+        <a href="#con1">nav</a>
+      </div>
+      <div class="navs_con">
+        <a href="#con2">con</a>
+      </div>
+      <div class="navs_footer">
+        <a href="#footer">footer</a>
+      </div>
+    </div>
+  </body>
+  <style>
+    .top {
+      width: 80%;
+      background-color: aqua;
+      height: 300px;
+      margin: auto;
+    }
+    .con1 {
+      position: relative;
+      width: 80%;
+      background-color: brown;
+      height: 300px;
+      margin: auto;
+    }
+    .con2 {
+      width: 80%;
+      background-color: wheat;
+      height: 300px;
+      margin: auto;
+    }
+    .footer {
+      width: 80%;
+      background-color: rebeccapurple;
+      height: 300px;
+      margin: auto;
+    }
+    .navs {
+      position: fixed;
+      right: 4.375rem;
+      top: 50%;
+    }
+
+    html {
+      /* 页面滚动效果 */
+      scroll-behavior: smooth;
+    }
+  </style>
+</html>
