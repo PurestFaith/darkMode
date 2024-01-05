@@ -1,6 +1,10 @@
 <template>
   <div class="page">
     <div class="flex">
+      <div class="demo">
+        <img src="../assets/demo.webp" alt="" />
+      </div>
+      <div class="bg">2</div>
       <div>
         <el-button type="success" @click="drawer = true" plain
           >Success</el-button
@@ -113,6 +117,7 @@
         </el-form>
       </el-watermark>
     </el-drawer>
+    <a href="tel:+1234567890">点击拨号</a>
   </div>
 </template>
 
@@ -193,5 +198,21 @@ const options = [
 }
 .txt {
   color: #67c23a;
+}
+.demo {
+  position: relative;
+  color: transparent;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  height: 200px;
+  width: 200px !important;
+  border-radius: 50%;
+  z-index: -1;
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  filter: blur(62px);
 }
 </style>
