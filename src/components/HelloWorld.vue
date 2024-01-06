@@ -122,6 +122,7 @@
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
 import { toggleDark } from './dark.js'
+
 const formInline = reactive({
   user: '',
   region: '',

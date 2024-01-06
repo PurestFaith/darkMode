@@ -14,6 +14,9 @@ dependencies:
   element-plus:
     specifier: ^2.4.4
     version: 2.4.4(vue@3.3.11)
+  html5-qrcode:
+    specifier: ^2.3.8
+    version: 2.3.8
   pinia:
     specifier: ^2.1.7
     version: 2.1.7(vue@3.3.11)
@@ -653,6 +656,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /html5-qrcode@2.3.8:
+    resolution: {integrity: sha512-jsr4vafJhwoLVEDW3n1KvPnCCXWaQfRng0/EEYk1vNcQGcG/htAdhJX0be8YyqMoSz7+hZvOZSTAepsabiuhiQ==}
+    dev: false
 
   /lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
