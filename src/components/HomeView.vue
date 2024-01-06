@@ -43,7 +43,7 @@ const useLocal = (e) => {
   html5QrCode
     .scanFile(imageFile, false)
     .then((qr) => {
-      alert(qr)
+      console.log('1', qr)
     })
     .catch((err) => {
       alert(err)

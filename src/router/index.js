@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../components/HomeView.vue'
+import HomeView from '../components/ScanView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,11 +14,11 @@ const router = createRouter({
       name: 'Home',
       component: HomeView,
     },
-    {
-      path: '/scan',
-      name: 'Scan',
-      component: () => import('@/components/ScanView.vue'),
-    },
+    // {
+    //   path: '/scan',
+    //   name: 'Scan',
+    //   component: () => import('@/components/ScanView.vue'),
+    // },
   ],
 })
 
