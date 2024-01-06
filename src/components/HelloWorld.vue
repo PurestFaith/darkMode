@@ -1,10 +1,6 @@
 <template>
   <div class="page">
     <div class="flex">
-      <div class="demo">
-        <img src="../assets/demo.webp" alt="" />
-      </div>
-      <div class="bg">2</div>
       <div>
         <el-button type="success" @click="drawer = true" plain
           >Success</el-button
@@ -13,13 +9,15 @@
         <el-button type="warning" plain>Warning</el-button>
         <el-button type="danger" plain>Danger</el-button>
       </div>
+    </div>
+    <el-divider />
+    <div style="margin: 0 auto">
       <div>
         <el-icon @click="toggleDark" style="color: #b8bcc3; cursor: pointer"
           ><Sunny
         /></el-icon>
       </div>
     </div>
-    <el-divider />
     <div>
       <el-select
         v-model="selectvalue"
@@ -198,21 +196,5 @@ const options = [
 }
 .txt {
   color: #67c23a;
-}
-.demo {
-  position: relative;
-  color: transparent;
-}
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 22;
-  height: 200px;
-  width: 200px !important;
-  border-radius: 50%;
-  z-index: -1;
-  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
-  filter: blur(62px);
 }
 </style>
