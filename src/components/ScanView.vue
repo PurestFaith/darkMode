@@ -3,10 +3,6 @@
     <div @click="close" class="title">扫码 X</div>
     <!-- 扫描仪占位符 -->
     <div id="reader"></div>
-
-    <div style="margin-top: 220px; background-color: yellowgreen">
-      <div class="item" v-for="item in arr">{{ item }}</div>
-    </div>
   </div>
 </template>
 
@@ -23,7 +19,7 @@ let scanRes = {} // 存放扫码结果
 onBeforeRouteLeave((to) => {
   to.query.scanRes = scanRes
 })
-const arr = ref([])
+
 // 关闭扫码页面
 const close = () => {
   html5QrCode.stop().finally(() => {
@@ -35,7 +31,7 @@ const close = () => {
 // // 扫码成功的回调
 const onScanSuccess = (qr) => {
   scanRes.qr = qr
-  arr.value = qr
+
   close()
 }
 
